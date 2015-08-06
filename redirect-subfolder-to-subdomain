@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^example.com/subfolder [NC]
+RewriteRule ^(.*)$ http://example.com$1 [L,R=301]
+RedirectMatch 301 ^/subfolder/(.*)$ http://subfolder.example.com/$1
