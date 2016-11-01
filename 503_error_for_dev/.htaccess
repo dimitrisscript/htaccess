@@ -1,0 +1,4 @@
+order deny,allow
+deny from all
+allow from 91.138.213.216
+ErrorDocument 403 /503.php
